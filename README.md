@@ -31,9 +31,13 @@ Borrow = A’B
 
  ![image](https://github.com/naavaneetha/HALF_ADDER_SUBTRACTOR/assets/154305477/d76b099c-513f-4e7c-843a-e2fd028a531a)
 
-Figure -02 HALF Subtractor
+# Figure -02 HALF Subtractor
 
 **Truthtable**
+# Half Adder
+![image](https://github.com/Goutham2306/HALF_ADDER_SUBTRACTOR/assets/138971154/207da550-3564-44ab-91b3-f9d4b4d3c1e8)
+# Half Subtractor
+![image](https://github.com/Goutham2306/HALF_ADDER_SUBTRACTOR/assets/138971154/45d7f8e1-0655-4dbf-90e2-ef6c9979347e)
 
 **Procedure**
 
@@ -52,10 +56,27 @@ Figure -02 HALF Subtractor
 
 /* Program to design a half adder and full adder circuit and verify its truth table in quartus using Verilog programming.
 
-Developed by: RegisterNumber:*/
+# Developed by: Goutham.K
+# RegisterNumber: 212223110019
+```
+module Half_Adder_Subtractor(a,b,sum,carry,D,Bo);
+input a,b;
+output sum,carry,D,Bo;
+xor G1(sum,a,b);
+and G2(carry,a,b);
+not G4(abar,a);
+xor G3(D,a,b);
+and G5(B0,abar,b);
+endmodule 	
+```
+*/
 
 **RTL Schematic**
+![image](https://github.com/Goutham2306/HALF_ADDER_SUBTRACTOR/assets/138971154/efb02aae-b726-4ede-be17-5e96e3393dda)
+
 
 **Output/TIMING Waveform**
+![image](https://github.com/Goutham2306/HALF_ADDER_SUBTRACTOR/assets/138971154/bb6053e0-bb92-4ee5-b507-a385211b3616)
 
 **Result:**
+Thus the half adder and half subtractor circuits are designed and the truth tables are verified successfully using quartus software.
